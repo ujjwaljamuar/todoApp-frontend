@@ -1,0 +1,10 @@
+article{
+    display: grid;
+}
+
+.button.clear {
+    float: right;
+    color: #FFF;
+    background-color: #ee1630;
+    width: 170px;
+  }
