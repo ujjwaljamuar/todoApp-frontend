@@ -1,10 +1,27 @@
-article{
+article {
     display: grid;
+    width: 100%;
 }
 
 .button.clear {
-    float: right;
-    color: #FFF;
-    background-color: #ee1630;
     width: 10rem;
-  }
+    float: right;
+    color: #fff;
+    background-color: #ee1630;
+}
+
+@media (max-width: 391px) {
+    article {
+        display: grid;
+        width: 100%;
+    }
+    .button.clear {
+        width: 50dvw;
+        font-size: 10rem;
+        padding: auto;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #fff;
+        background-color: #ee1630;
+    }
+}

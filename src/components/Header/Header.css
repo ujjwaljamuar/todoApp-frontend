@@ -2,14 +2,20 @@ header {
     text-align: center;
 }
 
-header h1{
+header h1 {
     font-size: 6rem;
     font-weight: 200;
-    color: #3d566f;;
+    color: #3d566f;
 }
 
-/* @media only screen and (max-width: 1450px) {
+@media (max-width: 391px) {
     header {
         text-align: center;
     }
-} */
+
+    header h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        color: #3d566f;
+    }
+}

@@ -40,7 +40,7 @@ const Todos = () => {
     };
 
     return (
-        <article>
+        <div>
             <div>
                 <Tabs currentTab={currentTab} />
 
@@ -50,12 +50,15 @@ const Todos = () => {
                     </button>
                 ) : null}
             </div>
-            <ul>
-                {getTodos().map((todo) => (
-                    <Todo key={todo._id} todo={todo} />
-                ))}
-            </ul>
-        </article>
+
+            <article>
+                <ul>
+                    {getTodos().map((todo) => (
+                        <Todo key={todo._id} todo={todo} />
+                    ))}
+                </ul>
+            </article>
+        </div>
     );
 };
 

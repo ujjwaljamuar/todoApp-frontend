@@ -1,7 +1,7 @@
 .task{
+    margin: .6rem .6rem .6rem 0;
     background-color: #34495e;
     padding: 1rem;
-    margin: .5rem;
     overflow-x: hidden;
     border-radius: 10px;
     cursor: pointer;
@@ -23,5 +23,19 @@ span {
     border-bottom: 1px solid white;
     background-color: #34495e;
     color: white;
+}
 
+@media (max-width: 391px){
+    .task{
+        width: auto;
+        display: flexbox;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+
+    .edit-todo{
+        width: 85%;
+    }
 }

@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import "./Todo.css";
 
-
 const Todo = ({ todo }) => {
     const [editing, setEditing] = useState(false);
     const [text, setText] = useState(todo.data);
@@ -18,7 +17,6 @@ const Todo = ({ todo }) => {
 
         dispatch(updateTodo(todo._id, text));
     };
-
 
     return (
         <li
@@ -43,7 +41,10 @@ const Todo = ({ todo }) => {
                 />
             </form>
 
-            <span className="icon" onClick={() => dispatch(deleteTodo(todo._id))}>
+            <span
+                className="icon"
+                onClick={() => dispatch(deleteTodo(todo._id))}
+            >
                 <i className="fas fa-trash" />
             </span>
 
